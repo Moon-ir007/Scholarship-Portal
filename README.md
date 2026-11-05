@@ -34,3 +34,4 @@ output:
 <img width="654" height="438" alt="Screenshot 2026-11-05 151818" src="https://github.com/user-attachments/assets/5fd7671f-2b82-47a3-9735-b25aadba3d75" />
 
 
+<img width="655" height="514" alt="Screenshot 2026-11-05 152114" src="https://github.com/user-attachments/assets/db08648e-6050-4e30-86b9-97f396161a9c" />
