@@ -27,6 +27,7 @@ scholarship-portal/
 ├── Scholarship_Portal.html        # Main user interface & PyScript configuration
 
 
-## Output:
+##Output:
 
-<img width="655" height="514" alt="Screenshot 2026-11-05 152114" src="https://github.com/user-attachments/assets/fd76fef6-562b-4b7e-88f4-119ea6e52a91" />
+<img width="654" height="438" alt="Screenshot 2026-11-05 151818" src="https://github.com/user-attachments/assets/a30670c6-b5c9-40ea-a7b7-d56d2abddfcd" />
+
