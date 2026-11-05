@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+      body{
+        font-family:arial,sans-serif;
+        
+      }
+        #input{
+            background: linear-gradient(lightblue,pink) ;
+            padding:15px;
+        }
+        button{
+          align-items : center;
+        }
+        button:hover{
+            color: rgb(0, 0, 0);
+            background-color: chartreuse;
+        }
+        h1{
+          text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <div id="input">
+    <h1>Scholarship Portal</h1>
+    State : <select id="state">
+      <option value="SELECT">Select</option>
+          <option>Westbengal</option>
+          <option>Other</option>
+    </select><br><br>
+
+    Family Income : <input type="name" id="income" placeholder="Family-income" /> <br><br>
+
+    Education : <select id="education">
+        <option value="">Select</option>
+        <option>10+2</option>
+        <option>Undergrduate</option>
+        <option>Postdergrduate</option>
+    </select><br><br>
+
+    Gender : <select id="gender">
+        <option value="">select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select><br><br>
+
+    Religion : <select id="religion">
+        <option value="">Select</option>
+        <option>Minority</option>
+        <option>other</option>
+    </select><br><br>
+
+    Marks : <input type="number" id="marks" placeholder="marks in percent %" /> <br><br>
+
+    <button id="submit-btn" py-click="greet">Submit</button> <br><br>
+
+    </div>
+    <div id="output"></div>
+    <script type="py">
+        from pyscript import display, document
+
+        def greet(event):
+            user_input1 = document.querySelector("#state")
+            user_input2 = document.querySelector("#marks")
+            user_input3 = document.querySelector("#education")
+            user_input4 = document.querySelector("#gender")
+            user_input5 = document.querySelector("#religion")
+            user_input6 = document.querySelector("#income")
+
+            state = (user_input1.value).lower()
+            marks = int(user_input2.value)
+            education = user_input3.value
+            gender= user_input4.value.lower()
+            religion= user_input5.value.lower()
+            income= int(user_input6.value)
+            
+            if  state=="westbengal" and marks>=80 and gender=="female" and income<=150000:
+                display("•You are Elegible for kanyashree Scholarship:")
+                display("Kanyashree Prakalpa is a conditional cash transfer scheme launched by the Government of West Bengal to improve the status, well-being, and education of adolescent girls while preventing early marriage.")
+            if state=="westbengal" and marks>=80 and income<=150000 and religion=="Minority":
+                display("•You are Elegible for Aikyashree Scholarship:")
+                display("West Bengal Minorities' Development and Finance Corporation (WBMDFC) to support students from minority communities.")
+            if state=="westbengal" and marks>=80 and income<=150000:
+                display("•You are Elegible for SVMCM Scholarship:")
+                display("The SVMCM scholarship stands for the Swami Vivekananda Merit-cum-Means Scholarship, a financial assistance program run by the Government of West Bengal to help meritorious students from economically disadvantaged families pursue higher education.")
+            else:
+                display("You are not Elegible")
+            
+            
+    </script>
+</body>
+</html>
