@@ -22,12 +22,15 @@ A lightweight, interactive web application that allows students to check their s
 
 ## 📁 Project Structure
 
-```text
+
 scholarship-portal/
 ├── Scholarship_Portal.html        # Main user interface & PyScript configuration
 
 
-##Output:
 
-<img width="654" height="438" alt="Screenshot 2026-11-05 151818" src="https://github.com/user-attachments/assets/a30670c6-b5c9-40ea-a7b7-d56d2abddfcd" />
+
+
+output:
+<img width="654" height="438" alt="Screenshot 2026-11-05 151818" src="https://github.com/user-attachments/assets/5fd7671f-2b82-47a3-9735-b25aadba3d75" />
+
 
